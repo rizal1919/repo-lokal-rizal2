@@ -1,0 +1,79 @@
+
+===============================================================================
+=== MATERI GIT COMMIT PADA WORKING TREE AREA, STAGING AREA, DAN COMMIT AREA ===
+===============================================================================
+
+
+git init 
+ - untuk membuat folder biasa menjadi folder git
+ - saat melakukan ini pastikan kamu berada di dalam folder yang dimaksud
+
+#Perintah ini dilakukan ketika biasanya pertama kali mengomit di laptop kita agar git tahu siapa kita (yang melakukan perubahan)
+git config --global user.name "my name" (1x di awal)
+git config --global user.email "my email.com" (1x di awal)
+  - sebaiknya sesuaikan username dan email yang digunakan pada github
+
+git status
+ > Jika berwarna merah berarti perubahan tsb masih ada di working tree (STAGE LEVEL 1)
+   - yang harus dilakukan adalah memindahkan perubahan tersebut ke staging area (STAGE LEVEL 2)
+   - gunakan perintah (git add <nama file>) untuk memindahkan satu persatu
+   - namun jika ada banyak perubahan file gunakan (git add .) sehingga otomatis semua file akan berpindah ke staging area.
+
+ > Jika berwarna hijau berarti perubahan tsb masih ada di staging area (STAGE LEVEL 2)
+   - yang harus dilakukan adalah memindahkan perubahan tersebut ke master branch (STAGE LEVEL 3)
+   - gunakan perintah (git commit -m "<keterangan perubahan apa yang dilakukan>"
+   - contoh (git commit -m "menambahkan bagian baru pada file style.css"
+
+git add / git add .
+ - untuk memindahkan file perubahan dari working tree ke staging area satu persatu (git add <nama file>)
+ - untuk memindahkan file perubahan dari working tree ke staging area ke semua file berwarna merah (git add .)
+
+git commit -m "<keterangan perubahan apa yang dilakukan>"
+ - selalu ingat lakukan commit ketika file perubahan sudah ada di staging area atau ketika file perubahan berwarna hijau
+
+git log | git log -- namafile | 
+ - untuk melihat history apa aja yang udah pernah dilakuin di repo ini secara keseluruhan (git log)
+ - jika ingin melihat beberapa saja history nya misal cuma ingin melihat 3 perubahan terakhir, maka perintahnya adalah (git log -3)
+ - hasil nya biasanya seperti dibawah ini
+
+   commit 3y5759hg784059j74949403h38394939j39920283h39494
+   Author: Avicomp <rizalfathurr1999@gmail.com>
+   Date: Mon Apr 16 14:28:40 2021 +0700
+
+ - kumpulan angka dan huruf random disebelah commit di atas namanya "hash"
+
+git checkout <5 digit pertama hash pada file yang dimaksud> -- <nama file yang ingin dikembalikan>
+ - digunakan ketika kita sebelumnya sudah menghapus file kemudian ingin merollback file tersebut ada lagi
+ - setelah itu file itu pasti ada di staging area, maka dari itu lakukan commit kembali pada file tersebut (git commit -m "mengembalikan file")
+
+
+================================================================================
+======== MATERI GIT BRANCH (FAST FORWARD) DAN (RECURSIVE/THREE WAYS) ===========
+================================================================================
+
+git branch | git branch <nama branch baru>
+ - perintah untuk melihat kita ada di branch yang mana (git branch)
+ - perintah untuk membuat branch baru (git branch <nama branch baru>)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
