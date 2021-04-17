@@ -107,3 +107,4 @@ git merge <nama branch> | git branch --merged | git branch -d <nama branch yang 
  | biasakan!! untuk melihat cabang mana yang telah di merge dengan bantuan (git branch --merged) |
  =================================================================================================
  - apabila cabang berhasil di merged, kamu bisa menghapus cabang tersebut dengan perintah (git branch -d <nama branch yang sudah di merge dan ingin dihapus>)
+
