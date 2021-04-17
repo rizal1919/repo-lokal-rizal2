@@ -3,8 +3,6 @@
 === MATERI GIT COMMIT PADA WORKING TREE AREA, STAGING AREA, DAN COMMIT AREA ===
 ===============================================================================
 
-coba
-
 git init 
  - untuk membuat folder biasa menjadi folder git
  - saat melakukan ini pastikan kamu berada di dalam folder yang dimaksud
