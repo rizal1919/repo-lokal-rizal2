@@ -107,3 +107,15 @@ git merge <nama branch> | git branch --merged | git branch -d <nama branch yang 
  =================================================================================================
  - apabila cabang berhasil di merged, kamu bisa menghapus cabang tersebut dengan perintah (git branch -d <nama branch yang sudah di merge dan ingin dihapus>)
 
+=================================================
+===== MATERI CLONE DARI GIT LOKAL KE GITHUB =====
+=================================================
+
+git clone
+git remote | git remote -v
+git push
+git pull
+git fetch
+git config --list
+git config --local user.name "<your name>" | git config --local user.email "<your email>"
+git config --global user.name "<yout name>" | git config --global user.email "<your email>"
