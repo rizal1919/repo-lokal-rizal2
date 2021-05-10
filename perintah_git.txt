@@ -30,6 +30,9 @@ git add / git add .
 git commit -m "<keterangan perubahan apa yang dilakukan>"
  - selalu ingat lakukan commit ketika file perubahan sudah ada di staging area atau ketika file perubahan berwarna hijau
 
+git push 
+ - setelah git add, git commit, jangan lupa git push agar perubahan terupdate ke github zal
+
 git log | git log -- namafile | 
  - untuk melihat history apa aja yang udah pernah dilakuin di repo ini secara keseluruhan (git log)
  - jika ingin melihat beberapa saja history nya misal cuma ingin melihat 3 perubahan terakhir, maka perintahnya adalah (git log -3)
